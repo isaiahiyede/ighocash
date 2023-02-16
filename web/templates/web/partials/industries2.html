@@ -1,0 +1,128 @@
+{% load static %}
+<!-- Industries -->
+<section class="container pt-xl-3 pb-5">
+  <h2 class="h1 text-center text-lg-start pb-4 mb-1 mb-lg-3">
+    Industries We Serve
+  </h2>
+  <div class="row pb-2 pb-md-4 pb-lg-5">
+    <div class="col-xl-4 col-lg-5 d-flex flex-column order-2 order-lg-1">
+      <!-- Swiper slider -->
+      <div
+        class="swiper mx-0 mb-md-n2 mb-xxl-n3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-autoheight swiper-backface-hidden"
+        data-swiper-options='{
+              "spaceBetween": 30,
+              "loop": true,
+              "tabs": true,
+              "autoHeight": true,
+              "navigation": {
+                "prevEl": "#prev-industry",
+                "nextEl": "#next-industry"
+              }
+            }'
+      >
+        <div
+          class="swiper-wrapper text-center text-lg-start"
+          style="
+            transition-duration: 0ms;
+            transform: translate3d(-1784px, 0px, 0px);
+            height: 231px;
+          "
+          id="swiper-wrapper-e7b564bc4403c2e6"
+          aria-live="polite"
+        >
+
+          <!-- Item -->
+          <div
+            class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next"
+            data-swiper-tab="#industry-3"
+            data-swiper-slide-index="2"
+            role="group"
+            aria-label="3 / 3"
+            style="width: 416px; margin-right: 30px"
+          >
+            <h3 class="h4 mb-4">
+              <a
+                href="#"
+                class="nav-link justify-content-center justify-content-lg-start fw-bold p-0"
+              >
+                Finance
+                <i
+                  class="bx bx-right-arrow-alt text-primary fs-3 fw-normal ms-2 mt-1"
+                ></i>
+              </a>
+            </h3>
+            <p style="text-align: justify">
+              We also offer financial advisory services to SMEs for equity and debt financing 
+              In this respect we offer them services in preparation of their bankable business plans and feasibility studies and market them to fund providers who we work with to obtain financing
+            </p>
+            <p>
+            </p>
+          </div>
+        <span
+          class="swiper-notification"
+          aria-live="assertive"
+          aria-atomic="true"
+        ></span>
+      </div>
+
+      <!-- Slider controls (Prev / next buttons) -->
+      <div
+        class="d-flex justify-content-center justify-content-lg-start mt-2 mt-lg-auto"
+      >
+        <button
+          type="button"
+          id="prev-industry"
+          class="btn btn-prev btn-icon btn-sm me-2"
+          tabindex="0"
+          aria-label="Previous slide"
+          aria-controls="swiper-wrapper-e7b564bc4403c2e6"
+        >
+          <i class="bx bx-chevron-left"></i>
+        </button>
+        <button
+          type="button"
+          id="next-industry"
+          class="btn btn-next btn-icon btn-sm ms-2"
+          tabindex="0"
+          aria-label="Next slide"
+          aria-controls="swiper-wrapper-e7b564bc4403c2e6"
+        >
+          <i class="bx bx-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div
+      class="col-lg-7 offset-xl-1 order-1 order-lg-2 pt-lg-3 mt-lg-n5 mb-4 mb-lg-0"
+    >
+      <!-- Swiper tabs (Industry images) -->
+      <div class="swiper-tabs mt-lg-n5">
+        <!-- Industry 1 -->
+        <div id="industry-1" class="swiper-tab active">
+          <img
+            src="{% static 'web/img/telecoms.jpg' %}"
+            class="rounded-3"
+            alt="Image"
+          />
+        </div>
+
+        <!-- Industry 2 -->
+        <div id="industry-2" class="swiper-tab">
+          <img
+            src="{% static 'web/img/telecoms.jpg' %}"
+            class="rounded-3"
+            alt="Image"
+          />
+        </div>
+
+        <!-- Industry 3 -->
+        <div id="industry-3" class="swiper-tab">
+          <img
+            src="{% static 'web/img/bankinf.jpg' %}"
+            class="rounded-3"
+            alt="Image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,130 @@
+{% extends "web/layout.html" %} {% load static %}
+<div></div>
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Capacity Development
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/hero.jpg);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Capacity Development
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Capacity Development</h1>
+          <p class="pb-2 mb-4 mb-xxl-5">
+            The key to development is in understanding where you are, where you
+            want to be, and all that is required of you and your team to get to
+            where you desire to be. Taking a deliberate action to fill that gap
+            is what distinguish great organizations from the mediocre.
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5">
+            We at CRC Data & Analytics Limited will help you examine your team
+            to determine your present capabilities in dealing with data,
+            identify the skills you need to have to be able to make effective
+            decisions using data, and then help you equip your people with the
+            skills. We provide trainings for your employees & executives in the
+            areas of:
+          </p>
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container pb-5 mb-3 mb-md-4 mb-lg-5">
+  <h2 class="h1 text-center">Capacity Development</h2>
+  <p class="text-center pb-1 pb-sm-0 mb-4 mb-sm-5">
+    Developing analytics capabilities using best rated tools, some of which
+    include:
+  </p>
+  <div class="row align-items-lg-center">
+    <div class="col-sm-6 col-lg-3">
+      <div class="pe-lg-4 pe-xl-5">
+        <div class="text-center text-lg-end pb-2 mb-4 mb-xl-5">
+          <i class="fa-brands fa-deezer fa-3x"></i>
+          <h3 class="h5 pt-1 my-2">Microsoft PowerBI</h3>
+        </div>
+        <div class="text-center text-lg-end pb-2 mb-4 mb-xl-5">
+          <i class="fa-solid fa-chart-pie fa-3x"></i>
+          <h3 class="h5 pt-1 my-2">Tableau Training</h3>
+        </div>
+        <div class="text-center text-lg-end">
+          <i class="fa-solid fa-chart-simple fa-3x"></i>
+          <h3 class="h5 pt-1 my-2">Looker Training</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 d-none d-lg-block">
+      <div
+        class="ratio ratio-1x1 border rounded-circle position-relative mx-auto"
+        style="max-width: 580px"
+      >
+        <div class="p-5">
+          <img
+            src="{% static '/web/img/teaching.jpg' %}"
+            class="rounded-circle"
+            alt="Tooth"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="ps-lg-4 ps-xl-5">
+        <div class="text-center text-lg-start pb-2 mb-4 mb-xl-5">
+          <i class="fa-solid fa-database fa-3x"></i>
+          <h3 class="h5 pt-1 my-2">Oracle PL/SQL Training</h3>
+        </div>
+        <div class="text-center text-lg-start pb-2 mb-4 mb-xl-5">
+          <i class="fa-solid fa-chart-gantt fa-3x"></i>
+          <h3 class="h5 pt-1 my-2">MySQL & PostgreSQL Server Training</h3>
+        </div>
+        <div class="text-center text-lg-start">
+          <i class="fa-solid fa-server fa-3x"></i>
+          <h3 class="h5 pt-1 my-2">MSSQL Server Training</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

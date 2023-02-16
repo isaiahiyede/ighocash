@@ -1,0 +1,115 @@
+{% load static %}
+<header class="header navbar navbar-expand-lg bg-light navbar-sticky">
+  <div class="container px-3">
+    <a href="/" class="navbar-brand pe-3">
+      <img src="{% static 'web/img/ighofinance.jpg' %}" width="70" alt="Igho Cash" />
+    </a>
+    <div id="navbarNav" class="offcanvas offcanvas-end">
+      <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link"
+              data-bs-toggle="dropdown"
+              >Company</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="/about" class="dropdown-item">About</a>
+                <a href="/industries" class="dropdown-item">Who we serve</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"r
+              class="nav-link"
+              data-bs-toggle="dropdown"
+              >Loans</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a href="/silver" class="dropdown-item">Silver</a>
+              </li>
+              <li>
+                <a href="/gold" class="dropdown-item">Gold</a>
+              </li>
+              <li>
+                <a href="/diamond" class="dropdown-item">Diamond</a>
+              </li>
+              <li>
+                <a href="/sme" class="dropdown-item">SME</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact" class="nav-link">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="offcanvas-header border-top">
+        <a href="#!" class="btn btn-primary p-3 w-100 rounded-0">
+          &nbsp;Get Started
+        </a>
+      </div> -->
+    </div>
+    <!-- Theme Toggle -->
+    <div
+      class="form-check form-switch mode-switch pe-lg-1 ms-auto me-4"
+      data-bs-toggle="mode"
+    >
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="theme-mode"
+        style="cursor: pointer"
+        title="Switch Theme"
+      />
+      <label
+        class="form-check-label d-none d-sm-block"
+        for="theme-mode"
+      ></label>
+      <label
+        class="form-check-label d-none d-sm-block"
+        for="theme-mode"
+      ></label>
+    </div>
+    <!-- End Theme Toggle -->
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- <a
+      href="#!"
+      class="btn p-3 btn-primary fs-sm rounded-0 d-none d-lg-inline-flex"
+    >
+      &nbsp;Get Started
+    </a>-->
+    <a
+      href="tel:+234 (913)-307-4276"
+      class="btn p-2 mx-4 btn-secondary rounded-0 d-none d-lg-inline-flex"
+    >
+      <i class="fa-solid fa-headset fa-3x"></i>&nbsp;&nbsp;+234 (913)-307-4276
+    </a>
+  </div>
+</header>

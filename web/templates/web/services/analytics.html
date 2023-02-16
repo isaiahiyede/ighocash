@@ -1,0 +1,193 @@
+{% extends "web/layout.html" %} {% load static %}
+<!--  -->
+{% block 'content' %}
+<section class="container pt-4 pb-5 mb-lg-5">
+  <!-- Breadcrumb mobile -->
+  <nav class="d-md-none pb-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item">
+        <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#!">Services</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Analytics & Modelling
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row row-cols-1 row-cols-md-2 g-0 pb-2">
+    <!-- Image -->
+    <div
+      class="col order-md-2 position-relative bg-position-center bg-size-cover bg-repeat-0 zindex-2"
+      style="
+        background-image: url(/static/web/img/stats-math.jpg);
+        border-radius: 0.5rem 0.5rem 0.5rem 0;
+      "
+    >
+      <div style="height: 250px"></div>
+    </div>
+
+    <!-- Text + Breadcrumb desktop -->
+    <div class="col order-md-1">
+      <nav class="d-none d-md-block py-3 mb-2 mb-lg-3" aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#">Services</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Analytics & Modelling
+          </li>
+        </ol>
+      </nav>
+
+      <div class="bg-secondary rounded-3 p-4 p-lg-5 mt-n2 mt-md-0 me-md-n2">
+        <div class="px-sm-3 px-xl-4 pt-4 py-md-3 py-lg-4 py-xl-5">
+          <h1 class="pb-2 pb-xxl-3">Analytics & Modelling</h1>
+          <p class="pb-2 mb-4 mb-xxl-5">
+            Machine Learning (ML) and Artificial Intelligence (AI) have become
+            the means to using data to predict future outcomes. We at CRC have a
+            team of data scientists that apply ML and AI in the following areas:
+          </p>
+          <p class="pb-2 mb-4 mb-xxl-5">
+            <!-- Numbered list group -->
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Financial Analytics</li>
+                <li class="list-group-item">Customer Analytics</li>
+                <li class="list-group-item">Marketing and Sales Analytics</li>
+              </ol>
+          </p>
+          <div class="d-xxl-flex align-items-center">
+            <a href="/contact" class="btn btn-primary rounded-0 btn-lg"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container pb-5 mb-3 mb-md-4 mb-lg-5">
+  <h2 class="h1 text-center">Analytics & Modelling</h2>
+  <!-- Accordion: Alternative style -->
+  <div class="row">
+    <div class="col-md-12 p-5">
+      <div class="accordion" id="accordionAlt">
+        <!-- Item -->
+        <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+          <h3 class="accordion-header" id="headingFour">
+            <button class="accordion-button shadow-none rounded-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">Finacial Analytics</button>
+          </h3>
+          <div class="accordion-collapse collapse show" id="collapseFour" aria-labelledby="headingFour" data-bs-parent="#accordionAlt">
+            <div class="accordion-body pt-0 px-4">
+              <p>
+                Financial analytics is the creation of ad hoc analysis to answer specific business questions and forecast possible future financial scenarios through reliable, factual insights drawn from data rather than intuition. Financial analytics can help you understand your business’ past and present performance and make strategic decisions. Here are some of the important financial analytics that any company, size notwithstanding, should be implementing:
+              </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Client Profitability Analytics</p>
+                  </div>
+                  <div class="col">-
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Product Profitability Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Predictive Sales Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture"j width="189" height="142"/>
+                    <p>Cash Flow Analytics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="accordion-item border-0 rounded-3 shadow-sm mb-3">
+          <h3 class="accordion-header" id="headingFive">
+            <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Customer Analytics</button>
+          </h3>
+          <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive" data-bs-parent="#accordionAlt">
+            <div class="accordion-body pt-0">
+              <p>Top organizations around the world have realized that one of the key steps to being competitive in today’s market is to raise engagement through high-quality, personalized relationships with their customers. Artificial intelligence is making significant improvements in understanding customer behavioral patterns, which brings customer personalization to a whole new level. At CRC Data & Analytics Limited, we bring you closer to your customers by helping you improve customer experience using analytics in the following areas:</p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Customer Segmentation</p>
+                  </div>
+                  <div class="col">-
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Target Marketing</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Cross/Up-Sell Modelling</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture"j width="189" height="142"/>
+                    <p>Customer Offer Affinity</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="accordion-item border-0 rounded-3 shadow-sm">
+          <h3 class="accordion-header" id="headingSix">
+            <button class="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Marketing & Sales Analytics</button>
+          </h3>
+          <div class="accordion-collapse collapse" id="collapseSix" aria-labelledby="headingSix" data-bs-parent="#accordionAlt">
+            <div class="accordion-body pt-0">
+              <p>Our Marketing and Sales Analytics helps you transform your marketing and sales by applying advanced analytics to generate value-creating insights from big data. Starting from the challenge you want to address, we apply a creative approach to data sourcing, deriving new variables and factoring in qualitative insights to deliver high-impact business solutions. At CRC Data & Analytics Limited, we help you understand your market by providing analytics solutions in the following areas:</p>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Market Size Analytics</p>
+                  </div>
+                  <div class="col">-
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Demand Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture" width="189" height="142"/>
+                    <p>Predictive Sales Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture"j width="189" height="142"/>
+                    <p>Market Trend Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture"j width="189" height="142"/>
+                    <p>Marketing & Sales Channel Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture"j width="189" height="142"/>
+                    <p>Competitor Analytics</p>
+                  </div>
+                  <div class="col">
+                    <img src="{% static 'web/img/Picture3.jpg' %}" alt="picture"j width="189" height="142"/>
+                    <p>Pricing Analytics</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
